@@ -1,167 +1,167 @@
 <!doctype html>
 <html lang="us">
+
 <head>
-	<meta charset="utf-8">
-	<title>Division Talent Calc</title>
-	<link href="jquery-ui.css" rel="stylesheet">
-	<style>
-	body {
-    margin: 0;
-    overflow: auto;
-    font-family: 'Verdana';
-    font-size: 12px;
-	background-color: #202226;
-color:#C6C9CD;
-}
-.left-banner{
-vertical-align: top;
-float : left;
-clear : none;
-height:100%;
-padding:100px 0px;
-width : 162px;
-}
-.body{
-vertical-align: top;
-float : left;
-clear : none;
-width : 70%;
-}
-.right-banner{
-vertical-align: top;
-float : left;
-clear : none;
-height:100%;
-padding:100px 0px;
-width : 162px;
-}
-.page {
-    max-width: 1200px;
-    min-width: 1120px;
-    width: 100%;
-    margin: 0 auto;
-    min-height: 600px
-}
-
-.footer {
-float:left;
-clear:none;
-    height: 50px;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 15px;
-    opacity: .5;
-width:100%;
-}
-.footer:hover {
-    opacity: 1
-}
-
-.leftpanel {
-    overflow:hidden;
-    float:left;
-    //margin: 0;
-    width: 40%;
-    padding: 10px 0 20px 0;
-    box-sizing: border-box;
-}
-.rightpanel {
-    overflow:hidden;
-    float:left;
-    //left: 0;
-    width: 60%;
-    padding: 10px 0 20px 0;
-    box-sizing: border-box;
-}
-.col33 {
-    text-align: center;
-    width:33%;
-    float:left;
-}
-.skill {
-color:black;
-width: 75px;
-height: 75px;
-background-color:white;
-margin: 20px auto;
-}
-
-.mod, .basemod {
-  background-color:red;
-  display:inline-block;
-  vertical-align: top;
-  padding: 10px;
-  margin:5px;
-  width: 50px;
-  height: 50px;
-  color:white;
-}
-
-.line {
-  background-color: white; /* Line color */
-  display:inline-block;
-  vertical-align: top;
-  padding: 10px 0px;
-  margin:5px 5px;
-  width: 1px; /* Line width */
-  height: 50px; /* Override in-line if you want specific height. */
-
-}
-
-#skill1.skillwrapper {
-	display:block;
-}
-
-.skillwrapper, .moddesc {
-    display: none;
-}
-
-.moddesc, .basemoddesc {
-  //padding: 10px;
-  margin:5px;
-}
-
-#tabs .ui-tabs-nav { 
-    font-size:1.5em;
-    float: right; 
-    border: none; 
-    -moz-border-radius: 0px 6px 6px 0px; 
-    -webkit-border-radius: 0px 6px 6px 0px; 
-    border-radius: 0px 6px 6px 0px; 
-} 
-#tabs .tabs-background { 
-    height: 4.1em; 
-    border-bottom: 1px solid #C6C9CD; 
-}
-#tabs { 
-    background: transparent; 
-    border: none; 
-} 
-#tabs .ui-widget-header { 
-    background: transparent; 
-    border: none; 
-    
-    -moz-border-radius: 0px; 
-    -webkit-border-radius: 0px; 
-    border-radius: 0px; 
-} 
-#tabs .ui-tabs-nav .ui-state-default { 
-    background: transparent; 
-    border: none; 
-} 
-#tabs .ui-tabs-nav .ui-state-active { 
-    background: transparent url(images/uiTabsArrowhover.png) no-repeat bottom center; 
-    border: none; 
-    color: #FF6D10; 
-}
-#tabs .ui-tabs-nav .ui-state-default a { 
-    color: #C6C9CD; 
-} 
-#tabs .ui-tabs-nav .ui-state-active a { 
-    color: #FF6D10; 
-}
-	</style>
+    <meta charset="utf-8">
+    <title>Division Talent Calc</title>
+    <link href="jquery-ui.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            overflow: auto;
+            font-family: 'Verdana';
+            font-size: 12px;
+            background-color: #202226;
+            color: #C6C9CD;
+        }
+        .left-banner {
+            vertical-align: top;
+            float: left;
+            clear: none;
+            height: 100%;
+            padding: 100px 0px;
+            width: 162px;
+        }
+        .body {
+            vertical-align: top;
+            float: left;
+            clear: none;
+            width: 70%;
+        }
+        .right-banner {
+            vertical-align: top;
+            float: left;
+            clear: none;
+            height: 100%;
+            padding: 100px 0px;
+            width: 162px;
+        }
+        .page {
+            max-width: 1200px;
+            min-width: 1120px;
+            width: 100%;
+            margin: 0 auto;
+            min-height: 600px
+        }
+        .footer {
+            float: left;
+            clear: none;
+            height: 50px;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 15px;
+            opacity: .5;
+            width: 100%;
+        }
+        .footer:hover {
+            opacity: 1
+        }
+        .leftpanel {
+            overflow: hidden;
+            float: left;
+            //margin: 0;
+            width: 40%;
+            padding: 10px 0 20px 0;
+            box-sizing: border-box;
+        }
+        .rightpanel {
+            overflow: hidden;
+            float: left;
+            //left: 0;
+            width: 60%;
+            padding: 10px 0 20px 0;
+            box-sizing: border-box;
+        }
+        .col33 {
+            text-align: center;
+            width: 33%;
+            float: left;
+        }
+        .skill {
+            color: black;
+            width: 75px;
+            height: 75px;
+            background-color: white;
+            margin: 20px auto;
+        }
+        .mod,
+        .basemod {
+            background-color: red;
+            display: inline-block;
+            vertical-align: top;
+            padding: 10px;
+            margin: 5px;
+            width: 50px;
+            height: 50px;
+            color: white;
+        }
+        .line {
+            background-color: white;
+            /* Line color */
+            
+            display: inline-block;
+            vertical-align: top;
+            padding: 10px 0px;
+            margin: 5px 5px;
+            width: 1px;
+            /* Line width */
+            
+            height: 50px;
+            /* Override in-line if you want specific height. */
+        }
+        #skill1.skillwrapper {
+            display: block;
+        }
+        .skillwrapper,
+        .moddesc {
+            display: none;
+        }
+        .moddesc,
+        .basemoddesc {
+            //padding: 10px;
+            margin: 5px;
+        }
+        #tabs .ui-tabs-nav {
+            font-size: 1.5em;
+            float: right;
+            border: none;
+            -moz-border-radius: 0px 6px 6px 0px;
+            -webkit-border-radius: 0px 6px 6px 0px;
+            border-radius: 0px 6px 6px 0px;
+        }
+        #tabs .tabs-background {
+            height: 4.1em;
+            border-bottom: 1px solid #C6C9CD;
+        }
+        #tabs {
+            background: transparent;
+            border: none;
+        }
+        #tabs .ui-widget-header {
+            background: transparent;
+            border: none;
+            -moz-border-radius: 0px;
+            -webkit-border-radius: 0px;
+            border-radius: 0px;
+        }
+        #tabs .ui-tabs-nav .ui-state-default {
+            background: transparent;
+            border: none;
+        }
+        #tabs .ui-tabs-nav .ui-state-active {
+            background: transparent url(images/uiTabsArrowhover.png) no-repeat bottom center;
+            border: none;
+            color: #FF6D10;
+        }
+        #tabs .ui-tabs-nav .ui-state-default a {
+            color: #C6C9CD;
+        }
+        #tabs .ui-tabs-nav .ui-state-active a {
+            color: #FF6D10;
+        }
+    </style>
 </head>
+
 <body>
     <div class="page">
         <div class="left-banner">
@@ -355,44 +355,44 @@ margin: 20px auto;
                 <div id="tabs-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</div>
             </div>
         </div>
-    <div class="right-banner">
-    </div>
+        <div class="right-banner">
+        </div>
     </div>
 
     <div class="footer">footer
     </div>
     </div>
-<script src="external/jquery/jquery.js"></script>
-<script src="jquery-ui.js"></script>
-<script>
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $("#tabs").tabs();
 
-$( "#tabs" ).tabs();
-
-//skills tab
-$(".skill[data-toggle]").on("click", function(e) {
-  e.preventDefault();  // prevent navigating
-  var selector = $(this).data("toggle");  // get corresponding element
-  $(".skillwrapper").hide();
-  $(".basemoddesc").show();
-  $(".moddesc").hide();
-  $(selector).show();
-});
-//skill mod clicks
-$(".mod[data-toggle]").on("click", function(e) {
-  e.preventDefault();  // prevent navigating
-  var selector = $(this).data("toggle");  // get corresponding element
-  $(".moddesc").hide();
-  $(".basemoddesc").hide();
-  $(selector).show();
-});
-//base mod click
-$(".basemod[data-toggle]").on("click", function(e) {
-  e.preventDefault();  // prevent navigating
-  var selector = $(this).data("toggle");  // get corresponding element
-  $(".moddesc").hide();
-  //$(".basemoddesc").hide();
-  $(selector).show();
-});
-</script>
+        //skills tab
+        $(".skill[data-toggle]").on("click", function(e) {
+            e.preventDefault(); // prevent navigating
+            var selector = $(this).data("toggle"); // get corresponding element
+            $(".skillwrapper").hide();
+            $(".basemoddesc").show();
+            $(".moddesc").hide();
+            $(selector).show();
+        });
+        //skill mod clicks
+        $(".mod[data-toggle]").on("click", function(e) {
+            e.preventDefault(); // prevent navigating
+            var selector = $(this).data("toggle"); // get corresponding element
+            $(".moddesc").hide();
+            $(".basemoddesc").hide();
+            $(selector).show();
+        });
+        //base mod click
+        $(".basemod[data-toggle]").on("click", function(e) {
+            e.preventDefault(); // prevent navigating
+            var selector = $(this).data("toggle"); // get corresponding element
+            $(".moddesc").hide();
+            //$(".basemoddesc").hide();
+            $(selector).show();
+        });
+    </script>
 </body>
+
 </html>
