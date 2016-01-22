@@ -1,2 +1,2 @@
-# deadmarine
+# Division talent calculator
 Division Talent Calculator
