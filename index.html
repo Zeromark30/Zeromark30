@@ -9,7 +9,7 @@
         body {
             margin: 0;
             overflow: auto;
-            font-family: 'Verdana';
+            font-family: Borda-Regular, Borda-Demi-Bold, Arial;
             font-size: 12px;
             background-color: #202226;
             color: #C6C9CD;
@@ -95,6 +95,10 @@
             height: 50px;
             color: white;
         }
+		.inlineblock {
+			display:inline-block;
+			vertical-align:top;
+		}
         .line {
             background-color: white;
             /* Line color */
@@ -182,31 +186,338 @@
                     <div class="leftpanel">
                         <div class="col33">
                             <h2>Medical</h2>
-                            <div class="skill" data-toggle="#skill1">Skill 1</div>
-                            <div class="skill" data-toggle="#skill2">Skill 2</div>
-                            <div class="skill" data-toggle="#skill3">Skill 3</div>
-                            <div class="skill" data-toggle="#skill4">Skill 4</div>
+                            <div class="skill" data-toggle="#med1">Med 1</div>
+                            <div class="skill" data-toggle="#med2">Med 2</div>
+                            <div class="skill" data-toggle="#med3">Med 3</div>
+                            <div class="skill" data-toggle="#med4">Med 4</div>
                         </div>
                         <div class="col33">
                             <h2>Tech</h2>
-                            <div class="skill"></div>
-                            <div class="skill"></div>
-                            <div class="skill"></div>
-                            <div class="skill"></div>
+                            <div class="skill" data-toggle="#tech1">Tech 1</div>
+                            <div class="skill" data-toggle="#tech2">Tech 2</div>
+                            <div class="skill" data-toggle="#tech3">Tech 3</div>
+                            <div class="skill" data-toggle="#tech4">Tech 4</div>
                         </div>
                         <div class="col33">
                             <h2>Security</h2>
-                            <div class="skill"></div>
-                            <div class="skill"></div>
-                            <div class="skill"></div>
-                            <div class="skill"></div>
+                            <div class="skill" data-toggle="#security1">Security 1</div>
+                            <div class="skill" data-toggle="#security2">Security 2</div>
+                            <div class="skill" data-toggle="#security3">Security 3</div>
+                            <div class="skill" data-toggle="#security4">Security 4</div>
                         </div>
                     </div>
                     <div class="rightpanel">
                         <div class="wrapper">
-                            <div class="skillwrapper" id="skill1">
-                                <div class="skillname">
-                                    <h2>Skill One</h2>
+                            <div class="skillwrapper" id="med1">
+                                <div class="skillheader">
+                                <div class="inlineblock">IMG</div>
+                                    <div class="inlineblock"><h2>Pulse</h2></div>
+                                </div>
+                                <div class="modlist">
+                                    <div class="basemod" data-toggle="#m1basedesc">Base mod</div>
+                                    <div class="line"></div>
+                                    <div class="mod" data-toggle="#m1m1desc">skill one mod 1</div>
+                                    <div class="mod" data-toggle="#m1m2desc">skill one mod 2</div>
+                                    <div class="mod" data-toggle="#m1m3desc">skill one mod 3 </div>
+                                    <div class="line"></div>
+                                    <div class="mod" data-toggle="#m1mmdesc">skill one master mod </div>
+                                </div>
+                                <div class="modinfo">
+                                    <div class="basemoddesc" id="m1basedesc">
+                                        <h3>Base: Pulse</h3>
+                                        <p>Sends out recon pulse that marks hostiles and allies through walls and covers.</p>
+                                    </div>
+                                    <div class="moddesc" id="m1m1desc">
+                                        <h3>skill 1 mod 1 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="m1m2desc">
+                                        <h3>skill 1 mod 2 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="m1m3desc">
+                                        <h3>skill 1 mod 3 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="m1mmdesc">
+                                        <h3>skill 1 master mod  desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skillwrapper" id="med2">
+                                <div class="skillheader">
+                                    <div class="inlineblock">IMG</div>
+                                    <div class="inlineblock"><h2>First Aid</h2></div>
+                                </div>
+                                <div class="modlist">
+                                    <div class="basemod" data-toggle="#m2basedesc">Base mod</div>
+                                    <div class="line"></div>
+                                    <div class="mod" data-toggle="#m2m1desc">skill 2 mod 1</div>
+                                    <div class="mod" data-toggle="#m2m2desc">skill 2 mod 2</div>
+                                    <div class="mod" data-toggle="#m2m3desc">skill 2 mod 3 </div>
+                                    <div class="line"></div>
+                                    <div class="mod" data-toggle="#m2mmdesc">skill 2 master mod </div>
+                                </div>
+                                <div class="modinfo">
+                                    <div class="basemoddesc" id="m2basedesc">
+                                        <h3>Base: First Aid</h3>
+                                        <p>Heals all allies within a small radius. The device can be used on location or launched to a distant target.</p>
+                                        <p><h4>Requires: Medical Wing Upgrade - Clinc</h4></p>
+                                    </div>
+                                    <div class="moddesc" id="m2m1desc">
+                                        <h3>skill 2 mod 1 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="m2m2desc">
+                                        <h3>skill 2 mod 2 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="m2m3desc">
+                                        <h3>skill 2 mod 3 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="m2mmdesc">
+                                        <h3>skill 2 master mod  desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skillwrapper" id="med3">
+                            <div class="skillheader">
+                                <div class="inlineblock">IMG</div>
+                                    <div class="inlineblock"><h2>Support Station</h2></div>
+                                </div>
+                                <div class="modlist">
+                                    <div class="basemod" data-toggle="#m3basedesc">Base mod</div>
+                                    <div class="line"></div>
+                                    <div class="mod" data-toggle="#m3m1desc">skill 3 mod 1</div>
+                                    <div class="mod" data-toggle="#m3m2desc">skill 3 mod 2</div>
+                                    <div class="mod" data-toggle="#m3m3desc">skill 3 mod 3 </div>
+                                    <div class="line"></div>
+                                    <div class="mod" data-toggle="#m3mmdesc">skill 3 master mod </div>
+                                </div>
+                                <div class="modinfo">
+                                    <div class="basemoddesc" id="m3basedesc">
+                                        <h3>Base: Support Station</h3>
+                                        <p>Drops a support station that heals allies and can be used to revive downed allies. </p>
+                                        <p><h4>Requires: Medical Wing Upgrade - Virus Lab</h4></p>
+                                    </div>
+                                    <div class="moddesc" id="m3m1desc">
+                                        <h3>skill 3 mod 1 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="m3m2desc">
+                                        <h3>skill 3 mod 2 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="m3m3desc">
+                                        <h3>skill 3 mod 3 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="m3mmdesc">
+                                        <h3>skill 3 master mod  desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skillwrapper" id="med4">
+                            <div class="skillheader">
+                                <div class="inlineblock">IMG</div>
+                                    <div class="inlineblock"><h2>Recovery Link</h2></div>
+                                </div>
+                                <div class="modlist">
+                                    <div class="basemod" data-toggle="#m4basedesc">Base mod</div>
+                                    <div class="line"></div>
+                                    <div class="mod" data-toggle="#m4m1desc">skill 4 mod 1</div>
+                                    <div class="mod" data-toggle="#m4m2desc">skill 4 mod 2</div>
+                                    <div class="mod" data-toggle="#m4m3desc">skill 4 mod 3 </div>
+                                    <div class="line"></div>
+                                    <div class="mod" data-toggle="#m4mmdesc">skill 4 master mod </div>
+                                </div>
+                                <div class="modinfo">
+                                    <div class="basemoddesc" id="m4basedesc">
+                                        <h3>Base: Recovery Link</h3>
+                                        <p> Heals and cures the users and nearby allies. Revives downed allies within range. Can "overheal" beyond maximum health. </p>
+                                        <p><h4>Requires: Medical Wing Upgrade - Disaster Aid</h4></p>
+                                    </div>
+                                    <div class="moddesc" id="m4m1desc">
+                                        <h3>skill 4 mod 1 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="m4m2desc">
+                                        <h3>skill 4 mod 2 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="m4m3desc">
+                                        <h3>skill 4 mod 3 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="m4mmdesc">
+                                        <h3>skill 4 master mod  desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="skillwrapper" id="tech1">
+                            <div class="skillheader">
+                                <div class="inlineblock">IMG</div>
+                                    <div class="inlineblock"><h2>Sticky Bomb</h2></div>
+                                </div>
+                                <div class="modlist">
+                                    <div class="basemod" data-toggle="#t1basedesc">Base mod</div>
+                                    <div class="line"></div>
+                                    <div class="mod" data-toggle="#t1m1desc">skill one mod 1</div>
+                                    <div class="mod" data-toggle="#t1m2desc">skill one mod 2</div>
+                                    <div class="mod" data-toggle="#t1m3desc">skill one mod 3 </div>
+                                    <div class="line"></div>
+                                    <div class="mod" data-toggle="#t1mmdesc">skill one master mod </div>
+                                </div>
+                                <div class="modinfo">
+                                    <div class="basemoddesc" id="t1basedesc">
+                                        <h3>Base: Sticky Bomb</h3>
+                                        <p>Fires a bomb that sticks to most surfaces and explodes when detonated remotely.</p>
+                                    </div>
+                                    <div class="moddesc" id="t1m1desc">
+                                        <h3>skill 1 mod 1 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="t1m2desc">
+                                        <h3>skill 1 mod 2 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="t1m3desc">
+                                        <h3>skill 1 mod 3 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="t1mmdesc">
+                                        <h3>skill 1 master mod  desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skillwrapper" id="tech2">
+                                <div class="skillheader">
+                                    <div class="inlineblock">IMG</div>
+                                    <div class="inlineblock"><h2>Turret</h2></div>
+                                </div>
+                                <div class="modlist">
+                                    <div class="basemod" data-toggle="#t2basedesc">Base mod</div>
+                                    <div class="line"></div>
+                                    <div class="mod" data-toggle="#t2m1desc">skill 2 mod 1</div>
+                                    <div class="mod" data-toggle="#t2m2desc">skill 2 mod 2</div>
+                                    <div class="mod" data-toggle="#t2m3desc">skill 2 mod 3 </div>
+                                    <div class="line"></div>
+                                    <div class="mod" data-toggle="#t2mmdesc">skill 2 master mod </div>
+                                </div>
+                                <div class="modinfo">
+                                    <div class="basemoddesc" id="t2basedesc">
+                                        <h3>Base: Turret</h3>
+                                        <p>Deploys a stationary turret that attacks nearby hostiles until it is destroyed or its battery runs out.</p>
+                                        <p><h4>Requires: Tech Wing Upgrade - Control Room</h4></p>
+                                    </div>
+                                    <div class="moddesc" id="t2m1desc">
+                                        <h3>skill 2 mod 1 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="t2m2desc">
+                                        <h3>skill 2 mod 2 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="t2m3desc">
+                                        <h3>skill 2 mod 3 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="t2mmdesc">
+                                        <h3>skill 2 master mod  desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skillwrapper" id="tech3">
+                                <div class="skillheader">
+                                    <div class="inlineblock">IMG</div>
+                                    <div class="inlineblock"><h2>Seeker Mine</h2></div>
+                                </div>
+                                <div class="modlist">
+                                    <div class="basemod" data-toggle="#t3basedesc">Base mod</div>
+                                    <div class="line"></div>
+                                    <div class="mod" data-toggle="#t3m1desc">skill 3 mod 1</div>
+                                    <div class="mod" data-toggle="#t3m2desc">skill 3 mod 2</div>
+                                    <div class="mod" data-toggle="#t3m3desc">skill 3 mod 3 </div>
+                                    <div class="line"></div>
+                                    <div class="mod" data-toggle="#t3mmdesc">skill 3 master mod </div>
+                                </div>
+                                <div class="modinfo">
+                                    <div class="basemoddesc" id="t3basedesc">
+                                        <h3>Base: Seeker Mine</h3>
+                                        <p>Releases an automated mine that seeks out hotile targets before exploding on proximity.</p>
+                                        <p><h4>Requires: Tech Wing Upgrade - Communications</h4></p>
+                                    </div>
+                                    <div class="moddesc" id="t3m1desc">
+                                        <h3>skill 3 mod 1 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="t3m2desc">
+                                        <h3>skill 3 mod 2 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="t3m3desc">
+                                        <h3>skill 3 mod 3 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="t3mmdesc">
+                                        <h3>skill 3 master mod  desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skillwrapper" id="tech4">
+                                <div class="skillheader">
+                                    <div class="inlineblock">IMG</div>
+                                    <div class="inlineblock"><h2>Tactical Link</h2></div>
+                                </div>
+                                <div class="modlist">
+                                    <div class="basemod" data-toggle="#t4basedesc">Base mod</div>
+                                    <div class="line"></div>
+                                    <div class="mod" data-toggle="#t4m1desc">skill 4 mod 1</div>
+                                    <div class="mod" data-toggle="#t4m2desc">skill 4 mod 2</div>
+                                    <div class="mod" data-toggle="#t4m3desc">skill 4 mod 3 </div>
+                                    <div class="line"></div>
+                                    <div class="mod" data-toggle="#t4mmdesc">skill 4 master mod </div>
+                                </div>
+                                <div class="modinfo">
+                                    <div class="basemoddesc" id="t4basedesc">
+                                        <h3>Base: Tactical Link</h3>
+                                        <p>Increases damage and critical hit chance to user and all nearby allies.</p>
+                                        <p><h4>Requires: Tech Wing Upgrade - Division Tech</h4></p>
+                                    </div>
+                                    <div class="moddesc" id="t4m1desc">
+                                        <h3>skill 4 mod 1 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="t4m2desc">
+                                        <h3>skill 4 mod 2 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="t4m3desc">
+                                        <h3>skill 4 mod 3 desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                    <div class="moddesc" id="t4mmdesc">
+                                        <h3>skill 4 master mod  desc</h3>
+                                        <p>description goes here</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="skillwrapper" id="security1">
+                                <div class="skillheader">
+                                    <div class="inlineblock">IMG</div>
+                                    <div class="inlineblock"><h2>Ballastic Shield</h2></div>
                                 </div>
                                 <div class="modlist">
                                     <div class="basemod" data-toggle="#s1basedesc">Base mod</div>
@@ -219,8 +530,8 @@
                                 </div>
                                 <div class="modinfo">
                                     <div class="basemoddesc" id="s1basedesc">
-                                        <h3>skill 1 base mod desc</h3>
-                                        <p>description goes here</p>
+                                        <h3>Base: Ballastic Shield</h3>
+                                        <p>Equips a portal Ballistic Shield that absorbs damage. The user can only use their sidearm while the shield is active.</p>
                                     </div>
                                     <div class="moddesc" id="s1m1desc">
                                         <h3>skill 1 mod 1 desc</h3>
@@ -240,9 +551,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="skillwrapper" id="skill2">
-                                <div class="skillname">
-                                    <h2>Skill Two</h2>
+                            <div class="skillwrapper" id="security2">
+                                <div class="skillheader">
+                                    <div class="inlineblock">IMG</div>
+                                    <div class="inlineblock"><h2>Smart Cover</h2></div>
                                 </div>
                                 <div class="modlist">
                                     <div class="basemod" data-toggle="#s2basedesc">Base mod</div>
@@ -255,8 +567,9 @@
                                 </div>
                                 <div class="modinfo">
                                     <div class="basemoddesc" id="s2basedesc">
-                                        <h3>skill 2 base mod desc</h3>
-                                        <p>description goes here</p>
+                                        <h3>Base: Smart Cover</h3>
+                                        <p>Reinforces a cover, increasing the user's damage and decreasing the incoming damage for all allies behind it.</p>
+                                        <p><h4>Requires: Security Wing Upgrade - Situation Room</h4></p>
                                     </div>
                                     <div class="moddesc" id="s2m1desc">
                                         <h3>skill 2 mod 1 desc</h3>
@@ -276,9 +589,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="skillwrapper" id="skill3">
-                                <div class="skillname">
-                                    <h2>Skill Three</h2>
+                            <div class="skillwrapper" id="security3">
+                                <div class="skillheader">
+                                    <div class="inlineblock">IMG</div>
+                                    <div class="inlineblock"><h2>Mobile Cover</h2></div>
                                 </div>
                                 <div class="modlist">
                                     <div class="basemod" data-toggle="#s3basedesc">Base mod</div>
@@ -291,8 +605,9 @@
                                 </div>
                                 <div class="modinfo">
                                     <div class="basemoddesc" id="s3basedesc">
-                                        <h3>skill 3 base mod desc</h3>
-                                        <p>description goes here</p>
+                                        <h3>Base: Mobile Cover</h3>
+                                        <p>Creates a temporary cover for one person, which provides standard cover protection until destroyed.</p>
+                                        <P><h4>Requires: Security Wing Upgrade - Armory</h4></P>
                                     </div>
                                     <div class="moddesc" id="s3m1desc">
                                         <h3>skill 3 mod 1 desc</h3>
@@ -312,9 +627,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="skillwrapper" id="skill4">
-                                <div class="skillname">
-                                    <h2>Skill 4</h2>
+                            <div class="skillwrapper" id="security4">
+                                <div class="skillheader">
+                                    <div class="inlineblock">IMG</div>
+                                    <div class="inlineblock"><h2>Survivor Link</h2></div>
                                 </div>
                                 <div class="modlist">
                                     <div class="basemod" data-toggle="#s4basedesc">Base mod</div>
@@ -327,8 +643,9 @@
                                 </div>
                                 <div class="modinfo">
                                     <div class="basemoddesc" id="s4basedesc">
-                                        <h3>skill 4 base mod desc</h3>
-                                        <p>description goes here</p>
+                                        <h3>Base: Survivor Link</h3>
+                                        <p>Increases damage resistance and speed for the users and nearby allies.</p>
+                                        <p><h4>Requires: Security Wing Upgrade - Barracks</h4></p>
                                     </div>
                                     <div class="moddesc" id="s4m1desc">
                                         <h3>skill 4 mod 1 desc</h3>
